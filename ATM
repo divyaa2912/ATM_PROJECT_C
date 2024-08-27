@@ -1,0 +1,42 @@
+//ATM project
+#include<stdio.h>
+int main()
+{
+    int pin;
+    int a=20000;
+    int bal=10000,option,credit,debit;
+    printf("enter the pin:");
+    scanf("%d",&pin);
+    if(pin==1122)
+    {
+        printf("\n 1)check the balance");
+        printf("\n 2)amount credited");
+        printf("\n 3)debited amount");
+        printf("\n choose your option:");
+        scanf("%d",&option);
+        if(option==1)
+        {
+            printf("bal=%d \n",bal);
+        }
+        else if(option==2)
+        {
+            credit=bal+a;
+            printf("credit=%d \n",credit);
+        }
+        else if(option==3)
+        {
+            debit=bal-a;
+            printf("debit=%d \n",debit);
+        }
+        else
+        {
+            printf("invalid password");
+        }
+    }
+    else
+    {
+        printf("invalid password");
+    }
+}
+
+
